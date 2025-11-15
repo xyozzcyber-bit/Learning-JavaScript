@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Penyempuranaan Prompt</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+</head>
+<body>
+    <div class="container">
+        <h1 class="judul">AI PROMPT ENHANCER</h1>
+        <p class="ket_app">PROMPT DI SEMPURNAKAN TENAGA AI GEMINI</p>
+        <div class="box prompt">
+            <textarea id="prompt" cols="30" rows="10" placeholder="Masukan prompt yang ingin di edit/disempurnakan"></textarea>
+            <button id="kirim">Ubah</button>
+            <p class="catatan">TIDAK BOLEH KOSONG YA!</p>
+        </div>
+        <div class="box output">
+            <h2>Hasil</h2>
+            <p class="BG">
+                <span id="respon">
+                    Tunggu dulu ya
+                </span>
+            </p>
+            <button id="salin">Salin Prompt</button>
+        </div>
+    </div>
+    <script src="script.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</body>
+</html>

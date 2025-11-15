@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #fefefe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', Sans-Serif;
+}
+
+.container {
+    margin: 38px;
+    max-width: 900px;
+    background-color: #f5f5f5;
+    border: 1px solid black;
+    border-radius: 18px;
+    padding: 18px;
+}
+
+.judul {
+    color: #598de7;
+    width: 100%;
+    text-align: center;
+}
+
+.ket_app {
+    margin-bottom: 70px;
+    width: 100%;
+    text-align: center;
+}
+
+.prompt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #eee;
+    height: 300px;
+    padding: 1.5px;
+    border-radius: 18px;
+    position: relative;
+}
+
+#prompt {
+    border: 5px solid #9233EA;
+    width: 280px;
+    border-radius: 18px;
+    padding: 8px;
+    font-family: 'Inter';
+    margin-bottom: 18px;
+    height: 120px;
+    font-size: 1.2rem;
+    resize: none;
+}
+
+#prompt:focus {
+    border: 5px solid #9233EA;
+    outline: none;
+}
+
+#kirim {
+    width: 77%;
+    height: 30px;
+    font-size: 1.2rem;
+    border-radius: 18px;
+    border: 1px dotted #9233EA;
+    background-color: #ffffff;
+    transition: transform 1s ease-in-out;
+}
+
+#kirim:hover {
+    transform: scale(1.2);
+}
+
+#kirim:active {
+    background-color: #9277EA;
+    transform: scale(1);
+}
+
+.catatan {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: none;
+}
+
+.output {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    background-color: #eee;
+    height: 1700px;
+    padding: 1.5px;
+    border-radius: 18px;
+    position: relative;
+    margin-top: 35px;
+}
+
+.BG {
+    height: 1500px;
+    background-color: #ddd;
+    width: 88%;
+    border-radius: 18px;
+    padding: 8px;
+}
+
+#salin {
+    width: 77%;
+    height: 30px;
+    font-size: 1.2rem;
+    border-radius: 18px;
+    border: 1px dotted #9233EA;
+    background-color: #ffffff;
+}
