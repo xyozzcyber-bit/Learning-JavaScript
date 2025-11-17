@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1024">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Generator Password || Rakha</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card1">
+            <div class="heading">
+                <h1 class="judul">Generate Password</h1>
+                <button id="history_btn"><i class='bx bx-history'></i></button>
+            </div>
+            <div class="set_hasil">
+                <div class="Set">
+                    <label for="judul_kesusahan">Select Difficulty: </label>
+                    <select name="judul_kesusahan" id="kesusahan">
+                        <option value="placeholder" disabled selected>Difficulty level</option>
+                        <option value="mudah">Easy</option>
+                        <option value="sedang">Medium</option>
+                        <option value="susah">Hard</option>
+                    </select>
+                    <br />
+                    <label for="range_label">There are <span id="angka_slinder">5</span> letter characters</label>
+                    <input type="range" id="angka_karakter" min="5" max="100" name="range_label" value="5" />
+                    <br />
+                    <button id="btn_gene" type="submit">Generate</button>
+                </div>
+                <div class="hasil">
+                    <h3 class="judul_hasil">Hasil</h3>
+                    <span id="output"></span>
+                    <br />
+                    <button id="simpan">Save</button>
+                    <button id="salin">Copy</button>
+                </div>
+            </div>
+        </div>
+        <div class="card2">
+            <div class="heading">
+                <button id="kembali"><i class='bx bx-arrow-back'></i></button>
+                <h1 class="judul">History</h1>
+            </div>
+            <div class="list_parent">
+                <ul id="list">
+                    <!-- // Exemple \\
+                    <li class="isi">
+                        <span id="password">Ua7a2B8wbK&H&hha7H7yTGj81h</span>
+                        <button id="copy"><i class="bx bx-copy"></i></button>
+                        <button id="hapus"><i class="bx bx-trash"></i></button>
+                    </li>
+                    -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
